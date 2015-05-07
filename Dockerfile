@@ -56,7 +56,7 @@ ENV INITDB true
 RUN yum -y localinstall mysql-community-release-el5-5.noarch.rpm
 RUN yum -y install mysql-server
 RUN rm -fr /var/cache/*
-RUN sh /opt/init-db.sh
+#RUN sh /opt/init-db.sh
 #RUN service mysqld stop
 EXPOSE 3306
 
