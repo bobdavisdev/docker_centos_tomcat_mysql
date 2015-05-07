@@ -51,7 +51,7 @@ EXPOSE 8080
 #ENV MYSQL_USER root
 #ENV MYSQL_PASS password
 #ENV MYSQL_CLIENT %
-#ENV INITDB true
+ENV INITDB true
 #ENV MYSQL_DB testdb
 RUN yum -y localinstall mysql-community-release-el5-5.noarch.rpm
 RUN yum -y install mysql-server
